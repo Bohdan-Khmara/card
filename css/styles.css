@@ -1,1 +1,91 @@
 @import "reset.css";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.statistics-card {
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: 300px;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 30px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+.statistics-name {
+    vertical-align: middle;
+    width: 90%;
+    display: inline-block;
+
+}
+
+.statistics-card:nth-of-type(3n+1) {
+    background-image: linear-gradient(to right, #ffbf99, #ff8096);
+
+}
+
+.statistics-card:nth-of-type(3n+2) {
+    background-image: linear-gradient(to right, #8bc9f6, #108ce1);
+
+}
+
+.statistics-card:nth-of-type(3n+3) {
+    background-image: linear-gradient(to right, #7ed9d1, #00d0b6);
+
+}
+
+.statistics-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2em;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.statistics-icon {
+    fill: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.statistics-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.statistics-card::after, .statistics-card::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.statistics-card::after {
+    content: '';
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    top: -5rem;
+    right: -5.5rem;
+}
+
+.statistics-card::before {
+    content: '';
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    bottom: -8.5rem;
+    right: -3rem;
+}
+
+
+
